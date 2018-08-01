@@ -1,24 +1,23 @@
 ---
 name: server_status
-description: show server status by running ansible ping command
-runner-type: local-shell-cmd
+description: Show server status by running ansible ping ad-hoc command
+runner_type: local-shell-cmd
 entry_point: ""
 enabled: true
 parameters:
   sudo:
-    description: "Run the command with sudo"
+    description: "Run command with sudo"
     type: boolean
     immutable: true
     default: true
-    kwarg_op:
-      immutable: true
-    cmd:
-      description: "Command to run"
-      type: string
-      immutable: true
-      default:  "/opt/stackstorm/virtualenvs/ansible/bin/ansible {{hosts}} --module-name=ping"
-    hosts:
-      description: "Ansible hosts to ping"
-      type: string
-      required: true
-      
+  kwarg_op:
+    immutable: true
+  cmd:
+    description: "Command to run"
+    type: string
+    immutable: true
+    default: "/opt/stackstorm/virtualenvs/ansible/bin/ansible {{hosts}} --module-name=ping"
+  hosts:
+    description: "Ansible hosts to ping"
+    type: string
+    required: true
