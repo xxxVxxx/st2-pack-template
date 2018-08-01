@@ -1,6 +1,6 @@
 ---
 name: chatops.ansible_server_status
-action_ref: st2_chatops_aliases.server_status
+action_ref: st2_pack_template.server_status
 description: Show status for hosts (ansible ping module)
 formats:
   - display: "status <hosts>"
