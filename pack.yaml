@@ -1,7 +1,7 @@
 ### Place information about your pack version here.
 ---
 ref: st2-pack-template
-name: st2-pack-template
+name: ansible-alias-pack
 description: A blank pack template!
 version: 0.1.0
 author: StackStorm Stanley
