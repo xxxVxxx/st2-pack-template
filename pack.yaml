@@ -1,6 +1,6 @@
 ### Place information about your pack version here.
 ---
-ref: st2-pack-template
+ref: st2_pack_template
 name: Ansible Alias Pack
 description: A blank pack template!
 version: 0.1.0
